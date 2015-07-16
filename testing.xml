@@ -1,23 +1,41 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="10" inline="false" x="105" y="112">
-    <field name="MODE">WHILE</field>
-    <value name="NUMBER">
-      <block type="math_number" id="17">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="1">
-        <next>
-          <block type="oled_drawnumber" id="2" inline="true">
-            <value name="NUMBER">
-              <block type="sensor_line" id="3">
-                <field name="LINE">MIDDLE</field>
-              </block>
-            </value>
+  <block type="oled_cleardisplay" id="26" x="103" y="85">
+    <next>
+      <block type="controls_whileUntil" id="10" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="math_number" id="17">
+            <field name="NUM">1</field>
           </block>
-        </next>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="1">
+            <next>
+              <block type="oled_setcursor" id="35" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="42">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="49">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawnumber" id="2" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_line" id="3">
+                        <field name="LINE">MIDDLE</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
