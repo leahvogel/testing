@@ -1,7 +1,30 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="oled_cleardisplay" id="1" x="103" y="85">
     <next>
-      <block type="movement_forward" id="2"></block>
+      <block type="controls_whileUntil" id="9" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="29" inline="true">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="sensor_object" id="43">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="36">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="2"></block>
+        </statement>
+        <next>
+          <block type="movement_right" id="53"></block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
