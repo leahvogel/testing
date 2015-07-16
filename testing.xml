@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="155" x="-32" y="40">
+  <block type="movement_forward" id="155" x="57" y="9">
     <next>
       <block type="controls_whileUntil" id="162" inline="false">
         <field name="MODE">UNTIL</field>
@@ -19,6 +19,9 @@
           </block>
         </value>
         <statement name="DO">
+          <block type="movement_forward" id="241"></block>
+        </statement>
+        <next>
           <block type="movement_right" id="202">
             <next>
               <block type="robot_delay" id="213" inline="true">
@@ -86,7 +89,7 @@
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </next>
   </block>
