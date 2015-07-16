@@ -1,16 +1,3 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="17" inline="false" x="47" y="110">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_button" id="24">
-        <field name="OBJECT">ENTER</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="10"></block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="34"></block>
-    </next>
-  </block>
+  <block type="movement_right" id="15" x="88" y="106"></block>
 </xml>
