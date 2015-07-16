@@ -8,7 +8,7 @@
             <field name="OP">GT</field>
             <value name="A">
               <block type="sensor_object" id="43">
-                <field name="OBJECT">RIGHTFRONT</field>
+                <field name="OBJECT">RIGHTSIDE</field>
               </block>
             </value>
             <value name="B">
