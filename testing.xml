@@ -22,38 +22,25 @@
           <block type="movement_forward" id="2"></block>
         </statement>
         <next>
-          <block type="movement_left" id="69">
+          <block type="movement_forward" id="106">
             <next>
-              <block type="robot_delay" id="89" inline="true">
+              <block type="robot_delay" id="108" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="96">
-                    <field name="NUM">100</field>
+                  <block type="math_number" id="127">
+                    <field name="NUM">1600</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_forward" id="106">
+                  <block type="movement_left" id="118">
                     <next>
-                      <block type="robot_delay" id="108" inline="true">
+                      <block type="robot_delay" id="120" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="127">
-                            <field name="NUM">1500</field>
+                          <block type="math_number" id="134">
+                            <field name="NUM">1400</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_left" id="118">
-                            <next>
-                              <block type="robot_delay" id="120" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="134">
-                                    <field name="NUM">1200</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="movement_forward" id="144"></block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
+                          <block type="movement_forward" id="144"></block>
                         </next>
                       </block>
                     </next>
