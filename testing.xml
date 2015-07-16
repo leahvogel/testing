@@ -8,10 +8,10 @@
     </value>
     <next>
       <block type="controls_whileUntil" id="61" inline="false">
-        <field name="MODE">WHILE</field>
+        <field name="MODE">UNTIL</field>
         <value name="NUMBER">
           <block type="logic_compare" id="86" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">GTE</field>
             <value name="A">
               <block type="sensor_spectrometer" id="79">
                 <field name="LIGHT">BLUE</field>
@@ -19,7 +19,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="72">
-                <field name="NUM">100</field>
+                <field name="NUM">99</field>
               </block>
             </value>
           </block>
@@ -258,6 +258,9 @@
             </statement>
           </block>
         </statement>
+        <next>
+          <block type="movement_stop" id="96"></block>
+        </next>
       </block>
     </next>
   </block>
