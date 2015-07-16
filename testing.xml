@@ -8,7 +8,7 @@
     </value>
     <next>
       <block type="controls_if" id="248" inline="false">
-        <mutation elseif="1" else="1"></mutation>
+        <mutation else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="267" inline="true">
             <field name="OP">EQ</field>
@@ -131,22 +131,7 @@
             </next>
           </block>
         </statement>
-        <value name="IF1">
-          <block type="logic_compare" id="324" inline="true">
-            <field name="OP">EQ</field>
-            <value name="A">
-              <block type="variables_get" id="346">
-                <field name="VAR">k</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="331">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO1">
+        <statement name="ELSE">
           <block type="movement_forward" id="356">
             <next>
               <block type="controls_whileUntil" id="363" inline="false">
@@ -252,9 +237,6 @@
               </block>
             </next>
           </block>
-        </statement>
-        <statement name="ELSE">
-          <block type="movement_forward" id="314"></block>
         </statement>
       </block>
     </next>
