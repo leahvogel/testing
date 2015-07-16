@@ -5,7 +5,7 @@
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
           <block type="logic_compare" id="29" inline="true">
-            <field name="OP">LT</field>
+            <field name="OP">GT</field>
             <value name="A">
               <block type="sensor_object" id="43">
                 <field name="OBJECT">LEFTSIDE</field>
@@ -13,7 +13,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="36">
-                <field name="NUM">50</field>
+                <field name="NUM">65</field>
               </block>
             </value>
           </block>
