@@ -1,46 +1,83 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="103" y="85">
+  <block type="movement_forward" id="155" x="-32" y="40">
     <next>
-      <block type="controls_whileUntil" id="9" inline="false">
+      <block type="controls_whileUntil" id="162" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
-          <block type="logic_compare" id="29" inline="true">
-            <field name="OP">GT</field>
+          <block type="logic_compare" id="169" inline="true">
+            <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="43">
-                <field name="OBJECT">LEFTSIDE</field>
+              <block type="sensor_object" id="185">
+                <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="36">
+              <block type="math_number" id="192">
                 <field name="NUM">65</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_forward" id="2"></block>
-        </statement>
-        <next>
-          <block type="movement_forward" id="106">
+          <block type="movement_right" id="202">
             <next>
-              <block type="robot_delay" id="108" inline="true">
+              <block type="robot_delay" id="213" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="127">
-                    <field name="NUM">1600</field>
+                  <block type="math_number" id="220">
+                    <field name="NUM">1400</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_left" id="118">
+                  <block type="movement_forward" id="231">
                     <next>
-                      <block type="robot_delay" id="120" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="134">
-                            <field name="NUM">1400</field>
+                      <block type="controls_whileUntil" id="9" inline="false">
+                        <field name="MODE">UNTIL</field>
+                        <value name="NUMBER">
+                          <block type="logic_compare" id="29" inline="true">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="sensor_object" id="43">
+                                <field name="OBJECT">LEFTSIDE</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="36">
+                                <field name="NUM">65</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
+                        <statement name="DO">
+                          <block type="movement_forward" id="2"></block>
+                        </statement>
                         <next>
-                          <block type="movement_forward" id="144"></block>
+                          <block type="movement_forward" id="106">
+                            <next>
+                              <block type="robot_delay" id="108" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="127">
+                                    <field name="NUM">1600</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_left" id="118">
+                                    <next>
+                                      <block type="robot_delay" id="120" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="134">
+                                            <field name="NUM">1400</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_forward" id="144"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
@@ -49,7 +86,7 @@
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
     </next>
   </block>
